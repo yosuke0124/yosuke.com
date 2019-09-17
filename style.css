@@ -119,21 +119,21 @@
 }
 
 
-
-
 /* ---------------------------------------------- /*
 *  5. Footer
 /* ---------------------------------------------- */
-#footer {
-	margin-top: 4rem;
-	background: black;
-	height:100%;
+
+.footer {
+
 }
 
-.copyright {
+.footer p{
+	margin-top: 1.5rem;
+	margin-bottom: 0;
 	color: white;
+	background-color: black;
+	font-size: 18px;
 }
-
 
 
 
