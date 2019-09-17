@@ -1,3 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900);
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* Home Start */
 .jumbotron-extend {
   position: relative;
   height: 100vh;
@@ -5,17 +13,128 @@
   background-image: url("img/3.jpg");
 }
 
-.navbar {
-  margin-top: 1rem;
+.navbar a{
+	margin: 1rem 0 0 1.5rem;
+	font-size: 20px;
 }
-.navbar-brand{
-
+.nav-item{
+	margin-right: 1rem;
 }
 
-.me img{
+.nav-item a{
+	font-size: 20px;
+}
+
+/* ---------------------------------------------- /*
+*  2. About
+/* ---------------------------------------------- */
+.container{ 
+	background-color: ;
+}
+
+.section-title h2{
+  margin: 2rem 0;
+}
+
+.my-img img{
   width: 70%;
   border-radius: 50%;
 }
+
+.my-text {
+  padding: 1rem;
+  margin-left: 4rem;
+  margin: 1rem;
+}
+
+.my-link a{
+  margin: .5rem 2rem;
+}
+
+/* ---------------------------------------------- /*
+*  3. Servise
+/* ---------------------------------------------- */
+
+.module-title {
+  margin: 2rem 0;
+}
+
+.iconbox {
+	background: #fff none repeat scroll 0 0;
+	padding: 50px 20px;
+	position: relative;
+	text-align: center;
+	max-width: 340px;
+	margin: 30px auto;
+	box-shadow: -6px 10px 40px rgba(0,0,0,0.06);
+}
+
+.iconbox-icon {
+	color: rgba(253,115,90,1);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -35px;
+	height: 80px;
+	width: 80px;
+	margin: 0 auto;
+	background: #fff;
+	display: block;
+	line-height: 80px;
+	border-radius: 50px;
+	font-size: 30px;
+	box-shadow: -6px 10px 40px rgba(0,0,0,0.06);
+}
+
+.iconbox-text {
+	padding-top: 30px;
+}
+
+.iconbox-title {
+	margin: 0 0 15px;
+	padding: 0;
+	text-transform: none;
+}
+
+.price-color {
+	color: rgb(253, 116, 91);
+    font-size: 22px;
+}
+
+/* ---------------------------------------------- /*
+*  4. Portfolio
+/* ---------------------------------------------- */
+
+.title{
+	margin: 2rem 0;
+}
+
+.col-4 img {
+	max-width: 100%; 
+}
+.col-4 img:hover{
+	opacity: 0.5;
+}
+
+}
+
+
+
+
+/* ---------------------------------------------- /*
+*  5. Footer
+/* ---------------------------------------------- */
+#footer {
+	margin-top: 4rem;
+	background: black;
+	height:100%;
+}
+
+.copyright {
+	color: white;
+}
+
+
 
 
 /*============ BOOTSTRAP BREAK POINTS:
