@@ -7,79 +7,106 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>yosuke.com</title>
 
-    <link rel="stylesheet" href="style.css">
+    <!-- swiper.cssの読み込み -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- animate.css , wow.jsの読み込み -->
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="dist/wow.min.js"></script>
+    <!-- Font Awesome 読み込み -->
     <script src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"></script>
+
+
 </head>
 
 <body>
 
 <!-- 1.Home Start -->
 <div id="home">
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/1.jpg" alt="Swiper01"></div>
+            <div class="swiper-slide"><img src="img/2.jpg" alt="Swiper02"></div>
+            <div class="swiper-slide"><img src="img/3.jpg" alt="Swiper03"></div>
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
-<div class="jumbotron jumbotron-extend">
-<div class="container-fluid">
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
 
-<!-- Navigation -->
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
-        <a class="navbar-brand" href="#">yosuke.com</a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber"
-            aria-expanded="false" aria-label="ナビゲーションの切替">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="main">
+        <div class="container-fluid">
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand" href="#">yosuke.com</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber"
+                    aria-controls="Navber" aria-expanded="false" aria-label="ナビゲーションの切替">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <div class="collapse navbar-collapse" id="Navber">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home <span class="sr-only">(現位置)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skill">Skill</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skill">Portfolio</a>
-                </li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </nav>
+                <div class="collapse navbar-collapse" id="Navber">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home">Home <span class="sr-only">(現位置)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skill">Skill</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
 
-</div><!-- End container -->
-</div><!-- End Jumbotron -->
+        </div><!-- End container -->
+    </div><!-- End Jumbotron -->
 </div><!-- End Home -->
 
 
 <!-- Start About me -->
 <div id="about">
 
-<div class="col-md-12 container">
+    <div class="col-md-12 container">
         <div class="section-title text-center">
             <h2 class="title">About Me</h2>
         </div>
-    
+
         <div class="row">
             <div class="col-md-4 text-center">
                 <div class="my-img"><img src="img/me.jpg"></div>
             </div>
-            
+
             <div class="col-md-8">
-                <div class="my-text">
+                <div class="wow bounceInDown" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10" data-wow-iteration="1" >
                     こんにちは、堺　陽祐（サカイ　ヨウスケ）です。<br>
                     HP製作や、LPページ、WORDPRESS製作を中心に行うWEBデザイナーです。<br>
                     デザインからコーディングまで対応しています。<br>
                     PCサイトからスマホサイトまで、レスポンシブ対応のWEB制作を行っています。<br><br>
-    
+
                     お客様のニーズにあったホームページをお作り致します。<br>
                     お気軽にご相談ください。
                     <hr class="clients-hr">
                     <cite>&#8212; Yosuke Sakai , Web Designer & Enginner</cite>
                 </div>
+                <div class="wow bounceInDown" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10" data-wow-iteration="1" >
                 <div class="my-link text-center padding">
                     <a class="btn btn-outline-dark btn-lg" href="#portfolio">作品集</a>
                     <a class="btn btn-outline-dark btn-lg" href="#contact">問い合わせ</a>
-                </div>            
+                </div>
+                </div>
             </div>
         </div>
     </div>
@@ -87,7 +114,7 @@
 </div><!-- End About me -->
 
 <!-- Start Skill -->
-<section id="service" class="module module-gray">
+<section id="skill" class="module module-gray">
     <div class="container">
 
         <div class="module-header wow fadeInUp">
@@ -99,7 +126,7 @@
 
         <div class="row">
 
-            <div class="col-sm-4">
+            <div class="col-md-4">
                 <div class="iconbox wow fadeInUp">
                     <div class="iconbox-icon">
                         <i class="fas fa-code"></i>
@@ -113,7 +140,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-4">
+            <div class="col-md-4">
                 <div class="iconbox wow fadeInUp" data-wow-delay=".2s">
                     <div class="iconbox-icon">
                         <i class="fab fa-bootstrap"></i>
@@ -128,7 +155,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-4">
+            <div class="col-md-4">
                 <div class="iconbox wow fadeInUp" data-wow-delay=".2s">
                     <div class="iconbox-icon">
                         <i class="fab fa-js-square"></i>
@@ -142,7 +169,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-4">
+            <div class="col-md-4">
                 <div class="iconbox wow fadeInUp" data-wow-delay=".4s">
                     <div class="iconbox-icon">
                         <i class="fab fa-wordpress"></i>
@@ -156,7 +183,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-4">
+            <div class="col-md-4">
                 <div class="iconbox wow fadeInUp" data-wow-delay=".2s">
                     <div class="iconbox-icon">
                         <i class="fab fa-php"></i>
@@ -170,7 +197,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-4">
+            <div class="col-md-4">
                 <div class="iconbox wow fadeInUp" data-wow-delay=".4s">
                     <div class="iconbox-icon">
                         <i class="fab fa-adobe"></i>
@@ -190,31 +217,66 @@
 <!-- Start portfolio -->
 
 <div id="portfolio">
-    <div class="col-12">
-    <h1 class="title text-center">Portfolio</h1>
+    <div class="col-sm-12">
+        <h1 class="title text-center">Portfolio</h1>
         <div class="row text-center">
-            <div class="col-4">
+            <div class="col-sm-4">
                 <a href="https://yosuke0124.github.io/boot1/"><img src="img/boot1.png"></a>
             </div>
-            <div class="col-4">
+            <div class="col-sm-4">
                 <a href="https://yosuke0124.github.io/nuno1/"><img src="img/nuno1.png"></a>
             </div>
-            <div class="col-4">
+            <div class="col-sm-4">
                 <a href="https://yosuke0124.github.io/yosuke.com/"><img src="img/yosuke.png"></a>
             </div>
-        </div>    
+        </div>
     </div>
 </div>
 
-<div class="footer">
-    <p class="copyright text-center">
-        Copyright - Yosuke Sakai, 2019 All Rights Reserved.
-    </p>
+<!-- Start Footer -->
+<div id="footer">
+    <p class="copyright text-center">Copyright - Yosuke Sakai, 2019 All Rights Reserved.</p>
 </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- Jquery.jsの読み込み -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<!-- swiper.jsの読み込み -->
+<script type="text/javascript" src="js/sample.js"></script>
+<script type="text/javascript" src="js/swiper.js"></script>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
+</script>
+
+<!-- wow.js 初期化 -->
+<script>
+    new WOW().init();
+</script>
+
+<!-- Smooth Scroll -->
+<script>
+    $(function () {
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function () {
+            // スクロールの速度
+            var speed = 400; // ミリ秒で記述
+            var href = $(this).attr("href");
+            var target = $(href == "#" || href == "" ? 'html' : href);
+            var position = target.offset().top;
+            $('body,html').animate({ scrollTop: position }, speed, 'swing');
+            return false;
+        });
+    });
+</script>
+
 </body>
 
 </html>
